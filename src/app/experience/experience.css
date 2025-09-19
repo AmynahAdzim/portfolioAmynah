@@ -1,0 +1,118 @@
+/* Section Header */
+.header {
+  color: #1a237e;
+  font-family: Papyrus;
+  margin-bottom: 30px;
+}
+
+.experience-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+ul {
+  list-style-position: outside; 
+  padding-left: 20px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+  flex-shrink: 0; 
+}
+
+.experience-raven,
+.experience-mahb,
+.experience-theta {
+  background-color: #fff;
+  width: 60vw; 
+  padding: 20px 30px;
+  border-radius: 8px;
+  border: 2px solid #ddd;   
+  display: flex;              
+  align-items: flex-start;    
+  gap: 20px;                  
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+
+.highlight {
+  border: 4px solid #00bfa6;  
+}
+
+.info-raven,
+.info-mahb,
+.info-theta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-raven,
+.name-mahb,
+.name-theta {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a237e;
+  margin-top: 15px;
+}
+
+.role-raven,
+.role-mahb,
+.role-theta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.description-raven,
+.description-mahb,
+.description-theta {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .experience-raven,
+  .experience-mahb,
+  .experience-theta {
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;       
+    width: 60vw;               
+  }
+
+  .company-logo {
+    margin-bottom: 1px;  
+    width: 80px;
+    height: 80px;
+  }
+
+  .info-raven,
+  .info-mahb,
+  .info-theta {
+    text-align: center;   
+  }
+
+  .description-raven,
+  .description-mahb,
+  .description-theta {
+    text-align: justify; 
+  }
+}

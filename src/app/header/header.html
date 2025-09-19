@@ -1,0 +1,16 @@
+<header> 
+  <div class="nav-container1">
+    <!-- Toggle button -->
+    <button class="nav-toggle" (click)="toggleNav()">
+      ☰
+    </button> 
+    
+    <!-- Navigation -->
+    <nav [class.active]="isNavOpen">
+      <a href="#profile" class="nav-link" (click)="closeNav()">PROFILE</a>
+      <a href="#skill" class="nav-link" (click)="closeNav()">SKILLS</a>
+      <a href="#project" class="nav-link" (click)="closeNav()">PROJECTS</a>
+      <a href="#work" class="nav-link" (click)="closeNav()">WORKING EXPERIENCES</a>
+    </nav>
+  </div>
+</header>
